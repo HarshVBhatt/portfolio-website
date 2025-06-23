@@ -1,5 +1,15 @@
+interface Experience {
+  title: string;
+  company: string;
+  location: string;
+  period: string;
+  achievements: string[];
+  techStack: string[];
+  articleLink?: string;
+}
+
 export default function ExperienceSection() {
-  const experiences = [
+  const experiences: Experience[] = [
     {
       title: "Data Scientist Co-op",
       company: "Cohere Health",
@@ -24,7 +34,7 @@ export default function ExperienceSection() {
         "Developed an aggregation algorithm leveraging optimizer weights, resulting in 7% accuracy increase over conventional methods."
       ],
       techStack: ["Federated Learning", "Deep Learning", "PyTorch", "Python"],
-      article: true
+      articleLink: "https://doi.org/10.1109/TNSM.2023.3320406"
     },
     {
       title: "Student Researcher",
@@ -36,7 +46,7 @@ export default function ExperienceSection() {
         "Developed a novel CNN-based framework, improving the F1-scores by 24% enhancing the analysis of ASD individuals' attention spans."
       ],
       techStack: ["CNN", "Signal Processing", "TensorFlow", "Python"],
-      article: true
+      articleLink: "https://doi.org/10.1109/ACCESS.2023.3265571"
     },
     {
       title: "Machine Learning Intern",
@@ -65,7 +75,16 @@ export default function ExperienceSection() {
                   <h3 className="text-2xl font-bold text-white">{exp.title}</h3>
                   <p className="text-xl text-blue-400">
                     {exp.company}
-                    {exp.article && <span className="text-sm text-gray-400 ml-2">[Article]</span>}
+                    {exp.articleLink && (
+                      <a 
+                        href={exp.articleLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-blue-300 hover:text-blue-200 ml-2 underline"
+                      >
+                        [Article]
+                      </a>
+                    )}
                   </p>
                   <p className="text-gray-400">{exp.location}</p>
                 </div>

@@ -1,5 +1,5 @@
 import { FaChartLine, FaCogs, FaRobot, FaPython, FaDatabase, FaFire, FaBook, FaBrain, FaAws, FaChartBar, FaFlask, FaDocker, FaChartArea, FaLink, FaProjectDiagram, FaSearch, FaPuzzlePiece, FaGithub } from 'react-icons/fa';
-// Profile image will be served from the assets directory
+import profileImage from "@assets/profile_pic_1750700111630.png";
 
 export default function HomeSection() {
   const areasOfInterest = [
@@ -31,9 +31,12 @@ export default function HomeSection() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Profile and Bio */}
         <div className="text-center mb-16">
-          <div className="w-48 h-48 rounded-full mx-auto mb-8 border-4 shadow-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center" style={{borderColor: 'rgba(192, 192, 192, 0.6)'}}>
-            <span className="text-6xl font-bold text-white">HB</span>
-          </div>
+          <img 
+            src={profileImage}
+            alt="Harsh Bhatt - Data Scientist" 
+            className="w-48 h-48 rounded-full mx-auto mb-8 border-4 shadow-lg object-cover"
+            style={{borderColor: 'rgba(192, 192, 192, 0.6)'}}
+          />
           
           <h1 className="text-5xl font-bold text-white mb-4">Harsh Bhatt</h1>
           <h2 className="text-2xl text-blue-400 mb-8">M.S Data Science, Northeastern University</h2>
