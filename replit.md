@@ -103,12 +103,21 @@ This is a modern, responsive portfolio website showcasing data science expertise
 - **Development**: In-memory storage for local development
 - **Production**: Neon Database (serverless PostgreSQL)
 
-## Changelog
+## Recent Changes
 
-```
-Changelog:
-- June 23, 2025. Initial setup
-```
+### January 23, 2025
+- ✓ Optimized layout to better utilize screen width (max-w-7xl containers)
+- ✓ Enhanced responsive tech stack grid (3-7 columns based on screen size)
+- ✓ Improved project grid layout (3 columns on XL screens)
+- ✓ Fixed profile image loading with new PNG asset
+- ✓ Added clickable article links in experience section
+- ✓ Updated project tech stacks and role tags per specifications
+- ✓ Reduced contact section font size for better line fitting
+- ✓ Verified Vercel deployment configuration
+- ✓ Created comprehensive deployment README with step-by-step instructions
+
+### June 23, 2025
+- Initial portfolio setup with dark theme and metallic design elements
 
 ## User Preferences
 

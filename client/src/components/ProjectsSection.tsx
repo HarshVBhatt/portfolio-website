@@ -64,7 +64,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="py-20">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-white mb-16">Projects</h2>
         
         {/* Filters */}
@@ -96,7 +96,7 @@ export default function ProjectsSection() {
           </Select>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-8">
           {filteredProjects.map((project, index) => (
             <div key={index} className="bg-card-bg/80 card-3d rounded-lg p-8">
               <h3 className="text-2xl font-bold text-white mb-4">

@@ -8,7 +8,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 w-full bg-dark-bg/90 backdrop-blur-sm z-50 border-b border-metallic/30">
-      <div className="max-w-6xl mx-auto px-4 py-4">
+      <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <h1 className="text-2xl font-bold text-white">Harsh Bhatt</h1>
           <div className="flex space-x-8">

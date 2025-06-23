@@ -64,7 +64,7 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="py-20">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-white mb-16">Professional Experience</h2>
         
         <div className="space-y-8">

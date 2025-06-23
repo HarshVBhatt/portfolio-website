@@ -28,7 +28,7 @@ export default function HomeSection() {
 
   return (
     <section id="home" className="min-h-screen pt-20 pb-16">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Profile and Bio */}
         <div className="text-center mb-16">
           <img 
@@ -54,9 +54,9 @@ export default function HomeSection() {
         {/* Areas of Interest */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-white mb-12">Areas of Interest</h3>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {areasOfInterest.map((area, index) => (
-              <div key={index} className="bg-card-bg/80 tile-3d rounded-lg p-6 text-center hover:bg-card-bg transition-all">
+              <div key={index} className="bg-card-bg/80 tile-3d rounded-lg p-8 text-center hover:bg-card-bg transition-all">
                 <area.icon className="text-3xl text-blue-400 mb-3 mx-auto" />
                 <h4 className="text-lg font-semibold text-white">{area.title}</h4>
               </div>
@@ -67,9 +67,9 @@ export default function HomeSection() {
         {/* Tech Stack */}
         <div>
           <h3 className="text-3xl font-bold text-center text-white mb-12">Tech Stack</h3>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4">
             {techStack.map((tech, index) => (
-              <div key={index} className="bg-card-bg/80 tile-3d rounded-lg p-4 text-center hover:bg-card-bg transition-all">
+              <div key={index} className="bg-card-bg/80 tile-3d rounded-lg p-5 text-center hover:bg-card-bg transition-all">
                 <tech.icon className="text-3xl text-blue-400 mb-2 mx-auto" />
                 <p className="text-sm text-gray-300">{tech.name}</p>
               </div>

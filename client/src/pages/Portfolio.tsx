@@ -15,7 +15,7 @@ export default function Portfolio() {
         <ContactSection />
       </main>
       <footer className="py-8 border-t border-metallic/30">
-        <div className="max-w-6xl mx-auto px-4 text-center text-gray-400">
+        <div className="max-w-7xl mx-auto px-6 text-center text-gray-400">
           <p>&copy; 2025 Harsh Bhatt. All rights reserved.</p>
         </div>
       </footer>
