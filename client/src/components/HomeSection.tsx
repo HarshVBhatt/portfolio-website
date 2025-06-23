@@ -1,4 +1,4 @@
-import { FaChartLine, FaCogs, FaRobot, FaPython, FaDatabase, FaFire, FaBook, FaBrain, FaAws, FaChartBar, FaFlask, FaDocker, FaChartArea, FaLink, FaProjectDiagram, FaSearch, FaPuzzlePiece, FaGithub } from 'react-icons/fa';
+import { FaChartLine, FaCogs, FaRobot, FaPython, FaDatabase, FaFire, FaBook, FaBrain, FaAws, FaChartBar, FaFlask, FaDocker, FaChartArea, FaLink, FaProjectDiagram, FaSearch, FaPuzzlePiece } from 'react-icons/fa';
 import profileImage from "@assets/profile_pic_1750700111630.png";
 
 export default function HomeSection() {
@@ -22,8 +22,7 @@ export default function HomeSection() {
     { name: "Langchain", icon: FaLink },
     { name: "LangGraph", icon: FaProjectDiagram },
     { name: "Athena", icon: FaSearch },
-    { name: "Glue", icon: FaPuzzlePiece },
-    { name: "GitHub Actions", icon: FaGithub }
+    { name: "Glue", icon: FaPuzzlePiece }
   ];
 
   return (
@@ -67,7 +66,7 @@ export default function HomeSection() {
         {/* Tech Stack */}
         <div>
           <h3 className="text-3xl font-bold text-center text-white mb-12">Tech Stack</h3>
-          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4">
             {techStack.map((tech, index) => (
               <div key={index} className="bg-card-bg/80 tile-3d rounded-lg p-5 text-center hover:bg-card-bg transition-all">
                 <tech.icon className="text-3xl text-blue-400 mb-2 mx-auto" />

@@ -66,6 +66,7 @@ The project is already configured for Vercel deployment with:
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist/public`
    - **Install Command**: `npm install`
+   - **Node.js Version**: 18.x or higher
 
 4. **Deploy**: Click "Deploy" and wait for the build to complete
 

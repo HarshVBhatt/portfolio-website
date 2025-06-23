@@ -113,6 +113,8 @@ This is a modern, responsive portfolio website showcasing data science expertise
 - ✓ Added clickable article links in experience section
 - ✓ Updated project tech stacks and role tags per specifications
 - ✓ Reduced contact section font size for better line fitting
+- ✓ Removed GitHub Actions from tech stack per user request
+- ✓ Updated Vercel configuration with proper SPA routing support
 - ✓ Verified Vercel deployment configuration
 - ✓ Created comprehensive deployment README with step-by-step instructions
 
