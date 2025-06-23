@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  
+  /* Custom portfolio colors */
+  --metallic: hsl(0, 0%, 75%);
+  --dark-bg: hsl(240, 10%, 10%);
+  --card-bg: hsl(240, 10%, 12%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-dark-bg text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .metallic-border {
+    @apply border-2;
+    border-color: rgba(192, 192, 192, 0.6);
+    box-shadow: 0 4px 6px -1px rgba(192, 192, 192, 0.1), 0 2px 4px -1px rgba(192, 192, 192, 0.06);
+  }
+  
+  .card-3d {
+    @apply border-2 transition-all duration-300;
+    border-color: rgba(192, 192, 192, 0.6);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    transform: translateZ(0);
+  }
+  
+  .card-3d:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .tile-3d {
+    @apply border-2 transition-all duration-300;
+    border-color: rgba(192, 192, 192, 0.6);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0);
+  }
+  
+  .tile-3d:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bg-dark-bg {
+    background-color: var(--dark-bg);
+  }
+  
+  .bg-card-bg {
+    background-color: var(--card-bg);
+  }
+  
+  .border-metallic {
+    border-color: var(--metallic);
+  }
+  
+  .text-metallic {
+    color: var(--metallic);
+  }
+}
