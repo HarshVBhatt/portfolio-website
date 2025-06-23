@@ -6,7 +6,7 @@ export default function ContactSection() {
       <div className="max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-5xl font-bold text-white mb-8">Let's Connect!</h2>
         <p className="text-lg text-gray-300 mb-12">
-          Ready to collaborate? Reach out to me on LinkedIn or Email. For more information checkout my GitHub and Google Scholar.
+          Ready to collaborate? Reach out to me on LinkedIn or Email. For more info checkout my GitHub and Google Scholar.
         </p>
         
         <div className="flex justify-center space-x-8">

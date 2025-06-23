@@ -34,7 +34,7 @@ export default function ExperienceSection() {
         "Developed an aggregation algorithm leveraging optimizer weights, resulting in 7% accuracy increase over conventional methods."
       ],
       techStack: ["Federated Learning", "Deep Learning", "PyTorch", "Python"],
-      articleLink: "https://doi.org/10.1109/TNSM.2023.3320406"
+      articleLink: "https://onlinelibrary.wiley.com/doi/10.1002/cpe.7911"
     },
     {
       title: "Student Researcher",
@@ -46,7 +46,7 @@ export default function ExperienceSection() {
         "Developed a novel CNN-based framework, improving the F1-scores by 24% enhancing the analysis of ASD individuals' attention spans."
       ],
       techStack: ["CNN", "Signal Processing", "TensorFlow", "Python"],
-      articleLink: "https://doi.org/10.1109/ACCESS.2023.3265571"
+      articleLink: "https://www.sciencedirect.com/science/article/pii/S1746809423004512"
     },
     {
       title: "Machine Learning Intern",
