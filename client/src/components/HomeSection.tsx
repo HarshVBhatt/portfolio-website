@@ -1,5 +1,5 @@
 import { FaChartLine, FaCogs, FaRobot, FaPython, FaDatabase, FaFire, FaBook, FaBrain, FaAws, FaChartBar, FaFlask, FaDocker, FaChartArea, FaLink, FaProjectDiagram, FaSearch, FaPuzzlePiece } from 'react-icons/fa';
-import profileImage from "@assets/profile_pic_1750700111630.png";
+import profileImage from "@assets/IMG_4850.png";
 
 export default function HomeSection() {
   const areasOfInterest = [
