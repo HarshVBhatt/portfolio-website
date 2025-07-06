@@ -67,6 +67,7 @@ export default function HomeSection() {
             Download Resume
           </button>
         </div>
+        
         {/* Areas of Interest */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-white mb-12">Areas of Interest</h3>
