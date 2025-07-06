@@ -1,7 +1,15 @@
-import { FaChartLine, FaCogs, FaRobot, FaPython, FaDatabase, FaFire, FaBook, FaBrain, FaAws, FaChartBar, FaFlask, FaDocker, FaChartArea, FaLink, FaProjectDiagram, FaSearch, FaPuzzlePiece } from 'react-icons/fa';
+import { FaChartLine, FaCogs, FaRobot, FaPython, FaDatabase, FaFire, FaBook, FaBrain, FaAws, FaChartBar, FaFlask, FaDocker, FaChartArea, FaLink, FaProjectDiagram, FaSearch, FaPuzzlePiece, FaDownload } from 'react-icons/fa';
 import profileImage from "@assets/IMG_4850.png";
+import resumePDF from "@assets/Harsh Bhatt Resume.pdf";
 
 export default function HomeSection() {
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = resumePDF;
+    link.download = 'Harsh_Bhatt_Resume.pdf';
+    link.click();
+  };
+
   const areasOfInterest = [
     { title: "Data Science", icon: FaChartLine },
     { title: "MLOps", icon: FaCogs },
@@ -49,7 +57,16 @@ export default function HomeSection() {
             </p>
           </div>
         </div>
-
+        {/* Download Resume Button */}
+        <div className="mt-8">
+          <button
+            onClick={handleDownloadResume}
+            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 flex items-center gap-2 mx-auto border-2 border-blue-500 hover:border-blue-400"
+          >
+            <FaDownload className="text-lg" />
+            Download Resume
+          </button>
+        </div>
         {/* Areas of Interest */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-white mb-12">Areas of Interest</h3>
