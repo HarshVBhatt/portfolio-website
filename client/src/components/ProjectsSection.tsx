@@ -7,6 +7,14 @@ export default function ProjectsSection() {
 
   const projects = [
     {
+      title: "PHIlter: Agentic system to detect Personal Health Identifiers",
+      githubUrl: "https://github.com/HarshVBhatt/phi-detection-agent",
+      summary: "A modular, multi-step agentic AI system using LangGraph to process clinical documents and accurately extract Personal Health Identifier (PHI) instances for HIPAA compliance.",
+      techStack: ["LangGraph", "Agentic Systems","GPT-4o", "LangSmith", "OCR", "Unstructured Health data"],
+      roles: ["GenAI"],
+      industry: "Healthcare"
+    },
+    {
       title: "LLIME: Large Language model Integrated Medical feature Extractor",
       githubUrl: "https://github.com/HarshVBhatt/LLIME",
       summary: "A patient note processing pipeline that fine-tunes LLMs for precise medical keyword extraction, achieving 4x more precision with Llama-2 7b and QLoRA optimization.",
@@ -31,11 +39,19 @@ export default function ProjectsSection() {
       industry: "Supply Chain"
     },
     {
-      title: "Ad Slot Reserve Price Prediction",
+      title: "Full-end MLOps System for Ad Slot Reserve Price Prediction",
       githubUrl: "https://github.com/HarshVBhatt/ad-slot-reserve-price-prediction",
       summary: "Machine learning model to predict optimal reserve prices for ad slots, maximizing revenue while maintaining competitive bidding dynamics in programmatic advertising.",
       techStack: ["Scikit-Learn", "Pandas", "XGBoost", "Grafana", "WandB", "Athena", "Glue"],
       roles: ["Data Science", "MLOps"],
+      industry: "Ads"
+    },
+    {
+      title: "Ad campaign analysis using A/B tests",
+      githubUrl: "https://github.com/HarshVBhatt/ad-analysis",
+      summary: "Comprehensive analysis of advertising campaign performance, exploring user engagement patterns and conversion metrics to optimize ad targeting strategies.",
+      techStack: ["Data Analysis", "Tableau", "Statistical Testing", "Pandas"],
+      roles: ["Data Science"],
       industry: "Ads"
     },
     {
@@ -45,14 +61,6 @@ export default function ProjectsSection() {
       techStack: ["Statistical Modeling", "Attribution Analysis", "Python"],
       roles: ["Data Science"],
       industry: "Marketing"
-    },
-    {
-      title: "Ad Analysis",
-      githubUrl: "https://github.com/HarshVBhatt/ad-analysis",
-      summary: "Comprehensive analysis of advertising campaign performance, exploring user engagement patterns and conversion metrics to optimize ad targeting strategies.",
-      techStack: ["Data Analysis", "Tableau", "Statistical Testing", "Pandas"],
-      roles: ["Data Science"],
-      industry: "Ads"
     }
   ];
 
@@ -96,9 +104,10 @@ export default function ProjectsSection() {
           </Select>
         </div>
 
-        <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-8">
-          {filteredProjects.map((project, index) => (
-            <div key={index} className="bg-card-bg/80 card-3d rounded-lg p-8">
+        <div className="space-y-8">
+          <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-8">
+            {filteredProjects.slice(0, 3).map((project, index) => (
+              <div key={index} className="bg-card-bg/80 card-3d rounded-lg p-8">
               <h3 className="text-2xl font-bold text-white mb-4">
                 <a 
                   href={project.githubUrl} 
@@ -131,6 +140,83 @@ export default function ProjectsSection() {
               </div>
             </div>
           ))}
+          </div>
+          <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-8">
+            {filteredProjects.slice(3,6).map((project, index) => (
+              <div key={index} className="bg-card-bg/80 card-3d rounded-lg p-8">
+              <h3 className="text-2xl font-bold text-white mb-4">
+                <a 
+                  href={project.githubUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  {project.title}
+                </a>
+              </h3>
+              <p className="text-gray-300 mb-6">{project.summary}</p>
+              
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.techStack.map((tech, techIndex) => (
+                  <span key={techIndex} className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              
+              <div className="flex flex-wrap gap-2">
+                {project.roles.map((role, roleIndex) => (
+                  <span key={roleIndex} className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">
+                    {role}
+                  </span>
+                ))}
+                <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm">
+                  {project.industry}
+                </span>
+              </div>
+            </div>
+          ))}
+          {filteredProjects.length > 6 && (
+            <div className="flex justify-center">
+              <div className="w-full max-w-md">
+                {filteredProjects.slice(6, 7).map((project, index) => (
+                  <div key={index} className="bg-card-bg/80 card-3d rounded-lg p-8">
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    <a 
+                      href={project.githubUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300 transition-colors"
+                    >
+                      {project.title}
+                    </a>
+                  </h3>
+                  <p className="text-gray-300 mb-6">{project.summary}</p>
+                  
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.techStack.map((tech, techIndex) => (
+                      <span key={techIndex} className="bg-green-500/20 text-green-300 px-3 py-1 rounded-full text-sm">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-2">
+                    {project.roles.map((role, roleIndex) => (
+                      <span key={roleIndex} className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full text-sm">
+                        {role}
+                      </span>
+                    ))}
+                    <span className="bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-sm">
+                      {project.industry}
+                    </span>
+                  </div>
+                </div>
+                ))}
+              </div>
+            </div>
+          )}
+          </div>
         </div>
       </div>
     </section>
