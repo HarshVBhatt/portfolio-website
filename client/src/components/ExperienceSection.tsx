@@ -82,7 +82,7 @@ export default function ExperienceSection() {
                         rel="noopener noreferrer"
                         className="text-sm text-blue-300 hover:text-blue-200 ml-2 underline"
                       >
-                        [Article]
+                        [Peer Reviewed Publication]
                       </a>
                     )}
                   </p>
