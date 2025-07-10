@@ -8,7 +8,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: "PHIlter: Agentic system to detect Personal Health Identifiers",
-      githubUrl: "https://github.com/HarshVBhatt/phi-detection-agent",
+      githubUrl: "https://philter.streamlit.app",
       summary: "A modular, multi-step agentic AI system using LangGraph to process images, clinical documents, and tabular data and accurately extract Personal Health Identifier (PHI) instances for HIPAA compliance.",
       techStack: ["LangGraph", "Agentic Systems","GPT-4o", "LangSmith", "OCR", "Unstructured Health data"],
       roles: ["GenAI"],
