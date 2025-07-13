@@ -53,7 +53,7 @@ export default function HomeSection() {
               I'm a detail-oriented <strong className="text-white">Data Scientist</strong> with <strong className="text-white">3+ years of experience</strong> in Machine Learning, Scalable Data Pipelines and GenAI. I specialize in building <strong className="text-white">end-to-end ML systems</strong>, leading investigative <strong className="text-white">data-centric experiments</strong>, and constructing <strong className="text-white">production-ready AI solutions.</strong>
             </p>
             <p>
-              As a <strong className="text-white">Data Scientist Co-op</strong> at <strong className="text-white">Cohere Health</strong>, I expanded production-ready ML models to a new clinical service area, developed and integrated monitoring tools for 19+ ML models, led several experiments to quantify and optimize model performance, and provided actionable insights to Clinical and Product teams.
+              As a <strong className="text-white">Data Scientist Co-op</strong> at <strong className="text-white">Cohere Health</strong>, I developed and deployed prior authroization approval ML models succesfully expanding automation to a new clinical service area, built and integrated monitoring tools for 19+ ML models, led several experiments to quantify and optimize model performance, and provided actionable insights to Clinical and Product teams.
             </p>
           </div>
         </div>
